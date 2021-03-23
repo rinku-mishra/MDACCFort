@@ -34,4 +34,4 @@ $(EXEC) : $(ODIR)/main.o
 $(ODIR)/%.o: $(SDIR)/%.f95
 	@echo "Cleaning complied files"
 	@rm -f *~ $(ODIR)/*.o $(SDIR)/*.o $(SDIR)/*~
-	Arm -rf $(OUTDIR)
+	@rm -rf $(OUTDIR)
