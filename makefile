@@ -27,7 +27,7 @@ all: $(EXEC)
 
 $(EXEC) : $(ODIR)/main.o
 	@echo "Linking MDACCFort"
-	@$(F95) $^ -o $@ $(OMP)
+	@$(F95) $^ -o $@ $(OpenACC)
 	@echo "MDACCFort is built"
 	@mkdir -p $(OUTDIR)
 
